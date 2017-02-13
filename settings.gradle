@@ -1,0 +1,3 @@
+include ':androiddemos', ':googlemaps'
+include ':tryCouchbaseLite'
+include ':listImageLoader'

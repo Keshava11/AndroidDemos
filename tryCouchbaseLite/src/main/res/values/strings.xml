@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TryCouchbaseLite</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="show">Show</string>
+    <string name="read_attachment">Read Attachment</string>
+    <string name="create_attachment">Create Attachment</string>
+    <string name="delete_attachment">Delete Attachment</string>
+    
+</resources>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.trycouchbaselite"
+        minSdkVersion 8
+        targetSdkVersion 20
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/LICENSE'
+//        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/NOTICE.txt'
+//        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile 'com.android.support:support-v4:20.0.0'
+    compile files('libs/CBLite-1.0.0-beta2.jar')
+    compile files('libs/CBLiteJavascript-1.0.0-beta2.jar')
+    compile files('libs/CBLiteListener-1.0.0-beta2.jar')
+    compile files('libs/commons-io-2.0.1.jar')
+    compile files('libs/jackson-core-asl-1.9.2.jar')
+    compile files('libs/jackson-mapper-asl-1.9.2.jar')
+    compile files('libs/rhino-1.7R3.jar')
+    compile files('libs/servlet-2-3.jar')
+    compile files('libs/webserver-2-3.jar')
+}

@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+/.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+androiddemos/build
+googlemaps/build
+listImageLoader/build
+tryCouchbaseLite/build
