@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--Files in the root of external storage directory-->
+    <external-path
+        name="rv_download"
+        path="Download" />
+</paths>

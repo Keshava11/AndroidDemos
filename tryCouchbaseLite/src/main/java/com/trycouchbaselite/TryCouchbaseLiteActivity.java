@@ -1,22 +1,11 @@
 
 package com.trycouchbaselite;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.BitmapFactory.Options;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,16 +16,24 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.couchbase.lite.Attachment;
 import com.couchbase.lite.CouchbaseLiteException;
 import com.couchbase.lite.Database;
 import com.couchbase.lite.Document;
 import com.couchbase.lite.Document.ChangeEvent;
 import com.couchbase.lite.Document.ChangeListener;
-import com.couchbase.lite.DocumentChange;
 import com.couchbase.lite.Manager;
 import com.couchbase.lite.SavedRevision;
 import com.couchbase.lite.UnsavedRevision;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A simple implementation demonstrating configuration of Couchbase Lite database and creating, updating and deleting of
@@ -44,7 +41,7 @@ import com.couchbase.lite.UnsavedRevision;
  * 
  * @author ravikumar
  */
-public class TryCouchbaseLiteActivity extends ActionBarActivity implements OnClickListener
+public class TryCouchbaseLiteActivity extends AppCompatActivity implements OnClickListener
 {
 	private final String TAG = TryCouchbaseLiteActivity.class.getSimpleName();
 	private final String DOC_ID_KEY = "doc_id_key";

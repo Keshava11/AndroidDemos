@@ -2,13 +2,13 @@ package com.comeback;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-public class ComeBackActivity extends ActionBarActivity {
+public class ComeBackActivity extends AppCompatActivity {
 
 	private ListView mComeBackLSv = null;
 	private ComeBackAdapter mComeBackAdapter = null;

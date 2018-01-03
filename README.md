@@ -20,3 +20,5 @@ A simple implementation demonstrating configuration of Couchbase Lite database a
 A brief about this project is provided here in this blog post
 http://ravinishad.blogspot.com/2014/09/begin-with-couchbase-lite-on-android.html
 
+### 5. ApkDownloadInstall
+A simple example demoing how to download an apk from a server other than Google Play Store and start installer for it.  

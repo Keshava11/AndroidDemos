@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "25.0.3"
+
+    useLibrary  'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.comeback"
-        minSdkVersion 8
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 27
     }
 
     buildTypes {
@@ -19,6 +21,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:21.+'
-    compile 'com.android.support:support-v4:21.+'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
 }
